@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="ingreso-texto">
+            <h1><img src="img/Logo.png" alt="logo-alura"></h1>
+            <div class="contenedor-texto-botones">
+                <form>
+                    <label for="mensaje"></label>
+                    <textarea placeholder="Ingrese aquí el texto"  cols="70" rows="10" id="mensaje" class="input-padron" maxlength="400"></textarea>
+                </form>
+                <div class="contenedor-botones">
+                    <div class="mensaje-descritivo">
+                        <img src="img/zondicons_exclamation-solid.png" alt="icono-importancia-alta">
+                        <p>Solo letras minúsculas y sin acentos (Máximo 400 carácteres)</p>
+                    </div>
+                    <div class="botones">
+                        <button id="boton-uno" onclick="encriptarTexto();">Encriptar</button>
+                        <button id="boton-dos"onclick="desencriptarTexto()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="salida-texto" >
+            <div><img id="imagen-de-busqueda" src="img/perroBuscando 1.png" alt="imagen-perro-buscando"></div>
+            <div id="textoAcopiar" class="contenedor-parrafos-busqueda">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button id="boton-tres" onclick="copiarTexto();" hidden>Copiar</button>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
